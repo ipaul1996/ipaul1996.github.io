@@ -26,3 +26,7 @@ document.getElementById('icon2').addEventListener("click",()=> {
 document.getElementById('icon3').addEventListener("click",()=> {
     window.location.href = "https://www.linkedin.com/in/indrajitpaul1996/";
 });
+
+document.getElementById('icon4').addEventListener("click",()=> {
+    window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=email@indraindrani1999@gmail.com";
+});
