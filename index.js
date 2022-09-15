@@ -27,6 +27,29 @@ document.getElementById('icon3').addEventListener("click",()=> {
     window.location.href = "https://www.linkedin.com/in/indrajitpaul1996/";
 });
 
-document.getElementById('icon4').addEventListener("click",()=> {
-    window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=email@indraindrani1999@gmail.com";
+// document.getElementById('icon4').addEventListener("click",()=> {
+//     window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=email@indraindrani1999@gmail.com";
+// });
+
+
+
+
+document.getElementById('ab').addEventListener("click",()=> {
+    window.scrollTo(0,400);
+    document.getElementById('home').style.textDecoration="none";
+    document.getElementById('ab').style.textDecoration="underline";
+    document.getElementById('sk').style.textDecoration="none";
+    document.getElementById('pr').style.textDecoration="none";
+    document.getElementById('con').style.textDecoration="none";
+
+});
+
+document.getElementById('home').addEventListener("click",()=> {
+    window.scrollTo(0,0);
+    document.getElementById('home').style.textDecoration="underline";
+    document.getElementById('ab').style.textDecoration="none";
+    document.getElementById('sk').style.textDecoration="none";
+    document.getElementById('pr').style.textDecoration="none";
+    document.getElementById('con').style.textDecoration="none";
+
 });

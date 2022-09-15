@@ -1,8 +1,10 @@
-
-
 * {
     background-color:black;
     font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #navbar {
@@ -13,6 +15,13 @@
     justify-content: space-between;
     align-items: center;
     color:white;
+    background-color:#0c0ce2;
+    margin-bottom: 130px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;
 }
 
 #navbar>div:nth-child(1) {
@@ -23,7 +32,14 @@
     align-items: center;
     justify-content: flex-start;
     margin-left: 50px;
+    position: relative;
+    background-color:#0c0ce2;
+    
 
+}
+
+#navbar>div:nth-child(1)>div {
+    background-color:#0c0ce2;
 }
 
 #navbar>div:nth-child(2) {
@@ -34,6 +50,8 @@
     display: flex;
     justify-content: space-evenly;
     margin-right: 100px;
+    position: relative;
+    background-color:#0c0ce2;
 }
 
 #navbar>div:nth-child(2)>div {
@@ -42,11 +60,9 @@
     align-items: center;
     border: 1px;
     justify-content: space-evenly;
+    background-color:#0c0ce2;
 }
 
-/* #navbar>div:nth-child(2)>div:hover {
-    background-color: rgb(243, 169, 19);
-} */
 #navbar>div:nth-child(2)>div>p:hover {
     background-color: rgb(243, 169, 19);
     padding: 9px 13px;
@@ -54,6 +70,11 @@
 }
 #navbar>div:nth-child(2)>div>p {
     font-weight: bold;
+    background-color:#0c0ce2;
+}
+
+#navbar h1 {
+    background-color:#0c0ce2;
 }
 
 #resume {
@@ -68,10 +89,12 @@
     height: 500px;
     width: auto;
     border: 1px;
-    margin-top: 15px;
+    margin-top: 85px;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     padding: 30px;
+
+    position: relative;
 
 }
 
@@ -151,27 +174,18 @@ h1,h2 {
     cursor:pointer;
 }
 
-/* :root {
-    --primary-color:#e2edfa;
-    --secondary-color:black;
-}
-
-.dark-theme {
-    --primary-color:black;
-    --secondary-color:white;
-} */
-
 #icon2 {
-    width:44px;
-    height:44px;
+    width:48px;
+    height:48px;
 }
 
 #icon3 {
     width:42px;
-    height:42px;
+    height:43px;
 }
 
 #icon4 {
+    margin-top: 6px;
     width:43px;
     height:48px;
 }
@@ -180,11 +194,97 @@ h1,h2 {
     display: flex;
     width:30%;
     margin-top: 20px;
-    /* border: 1px solid white; */
     justify-content: space-between;
     align-items: center;
 
 }
+
+#aboutme {
+    height: 270px;
+    width: 100%;
+    background-color:rgb(243, 169, 19) ;
+    position: relative;
+    padding-top: 5px;
+}
+
+#aboutme>h2 {
+    color:black;
+    text-decoration: underline;
+    position: realtive;
+    background-color: rgb(243, 169, 19);
+    padding-top: 35px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: -5px;
+}
+
+#aboutme>div {
+    background-color: rgb(243, 169, 19);
+    padding-top: -30px;
+    width:80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#aboutme>div>p {
+    background-color: rgb(243, 169, 19);
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    width:70%;
+
+}
+
+#skills {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+}
+
+#skills>h2 {
+    color:white;
+    text-decoration: underline;
+    position: realtive;
+    padding-top: 35px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
+
+#row1{
+    width:90%;
+    margin: auto;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 230px;
+    gap:25px;
+    
+}
+
+#row2 {
+    width:76%;
+    margin: auto;
+    margin-top: 15px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 230px;
+    gap:25px;
+}
+
+#skills img {
+    width:72%;
+    height:72%;
+    border-radius: 20px;
+    border:4px solid #2626fb;
+    padding: 1.5px;
+}
+
 
 
 
