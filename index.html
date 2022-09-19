@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
     <div id="navbar">
@@ -58,21 +61,99 @@
         </div>
     </div>
     <div id="skills">
-        <h2>My Skills</h2>
+        <h2>Technical Skills</h2>
+        <h3 class="tech">BACKEND</h3>
         <div id="row1">
             <div><img src="./Images/Java.png" alt=""></div>
             <div><img src="./Images/Spring.png" alt=""></div>
             <div><img src="./Images/Hibernate.png" alt=""></div>
             <div><img src="./Images/MYSQL.png" alt=""></div>
             <div><img src="./Images/AWS.jpg" alt=""></div>
+            <div><img src="./Images/Git.png" alt=""></div>
         </div>
+        <h3 class="tech">FRONTEND</h3>
         <div id="row2">
             <div><img src="./Images/HTML.jpg" alt=""></div>
             <div><img src="./Images/CSS.jpg" alt=""></div>
             <div><img src="./Images/JS.png" alt=""></div>
-            <div><img src="./Images/Git.png" alt=""></div>
         </div>
     </div>
+    
+    <div id="proj">
+        <h2>Projects</h2>
+        <div>
+            <div>
+                <img src="./Images/cricbuzz.png" alt="" class="proimg">
+                <h3 class="protitle">Cricbuzz Clone</h3>
+                <div class="prodescri">
+                <p>Cricbuzz is an Indian cricket news website. It features,
+                    news, articles, and live coverage of cricket matches
+                    including videos, text commentary, player stats, and
+                    team rankings</p>
+                <p>A collaborative project accomplished with a team of 6
+                    members in 5 days</p>
+                <p style="display: inline; color:rgb(243, 169, 19); margin-left: -100px;">Tech Stack:</p>
+                <p style="display: inline">HTML | CSS | JavaScript</p>
+                <div class="view">
+                    <div>
+                        <img src="./Images/Eye.png" alt="" id="e1">
+                    </div>
+                    <div>
+                        <img src="./Images/icons8-github-64 (1).png" alt="" id="g1">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/dotandkey.jpeg" alt="" class="proimg">
+                <h3 class="protitle">dotandkey Clone</h3>
+                <div class="prodescri">
+                <p>A skincare products website that believes in providing
+                    delightfully safe, surprisingly gentle, and
+                    unquestionably effective skincare products that are
+                    free from nasty chemicals.</p>
+                <p>A collaborative project accomplished with team of 5
+                        members in 5 days</p>
+                <p style="display: inline; color:rgb(243, 169, 19); margin-left: -100px;">Tech Stack:</p>
+                <p style="display: inline">HTML | CSS | JavaScript</p>
+                <div class="view">
+                    <div>
+                         <img src="./Images/Eye.png" alt="" id="e2">
+                    </div>
+                    <div>
+                        <img src="./Images/icons8-github-64 (1).png" alt="" id="g2">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="gitcont">GitHub Contribution Calendar</h2>
+    <div id="cal">
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </div>
+
+    <script
+            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    
+    <script>
+        GitHubCalendar(".calendar", "ipaul1996");
+    
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "ipaul1996", { responsive: true });
+    
+        // Use a proxy
+        GitHubCalendar(".calendar", "ipaul1996", {
+           proxy (username) {
+             return fetch(`https://your-proxy.com/github?user=${username}`)
+           }
+        }).then(r => r.text())
+    </script>
 </body>
 </html>
 <script src="index.js"></script>

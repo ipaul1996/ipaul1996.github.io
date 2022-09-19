@@ -1,7 +1,14 @@
+
+
+
+
+
+
 * {
-    background-color:black;
+    background-color:#02022a;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -9,19 +16,20 @@ html {
 
 #navbar {
     height: 80px;
-    width: 1251px;
+    width: 100%;
     padding: 0px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:white;
-    background-color:#0c0ce2;
+    background-color:#464bee;
     margin-bottom: 130px;
     position: fixed;
     top:0;
     left:0;
     right:0;
     z-index: 100;
+    
 }
 
 #navbar>div:nth-child(1) {
@@ -33,13 +41,13 @@ html {
     justify-content: flex-start;
     margin-left: 50px;
     position: relative;
-    background-color:#0c0ce2;
+    background-color:#464bee;
     
 
 }
 
 #navbar>div:nth-child(1)>div {
-    background-color:#0c0ce2;
+    background-color:#464bee;
 }
 
 #navbar>div:nth-child(2) {
@@ -51,7 +59,7 @@ html {
     justify-content: space-evenly;
     margin-right: 100px;
     position: relative;
-    background-color:#0c0ce2;
+    background-color:#464bee;
 }
 
 #navbar>div:nth-child(2)>div {
@@ -60,29 +68,31 @@ html {
     align-items: center;
     border: 1px;
     justify-content: space-evenly;
-    background-color:#0c0ce2;
+    background-color:#464bee;
 }
 
 #navbar>div:nth-child(2)>div>p:hover {
-    background-color: rgb(243, 169, 19);
+    background-color: black;
     padding: 9px 13px;
     border-radius: 8px;
 }
 #navbar>div:nth-child(2)>div>p {
     font-weight: bold;
-    background-color:#0c0ce2;
+    background-color:#464bee;
 }
 
 #navbar h1 {
-    background-color:#0c0ce2;
+    background-color:#464bee;
+    color:white;
 }
 
 #resume {
     text-decoration: none;
-    color:black;
+    color:white;
     font-weight: 700;
-    background-color: #0c0ce2;
-    color: white;
+    background-color: #464bee;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(31, 13, 86));
+
 }
 
 #about {
@@ -100,6 +110,7 @@ html {
 
 #about>div {
     border: 1px;
+    
 }
 
 #about>div:first-child {
@@ -108,7 +119,7 @@ html {
 }
 
 #about>div:first-child>button {
-    background-color: #0c0ce2;
+    background-color: #464bee;
     height: 40px;
     width: 110px;
     border-radius: 6px;
@@ -117,6 +128,8 @@ html {
     letter-spacing: 1.5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(31, 13, 86));
+
 }
 
 #name {
@@ -135,8 +148,9 @@ html {
 #pic {
     height:90%;
     width: 90%;
-    background-color: #0c0ce2;
+    background-color: #464bee;
     border-radius: 50%;
+    
    
 }
 
@@ -144,7 +158,9 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #0c0ce2;
+    background-color: #464bee;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(31, 13, 86));
+
 }
 #about>div:nth-child(2) {
     display: flex;
@@ -160,7 +176,7 @@ html {
     border-radius: 50%;
     padding-left: 30px;
     padding-top: 30px;
-    border:8px solid rgb(243, 169, 19);
+    border:8px solid white;
     margin-bottom: 75px;
     
 }
@@ -205,6 +221,7 @@ h1,h2 {
     background-color:rgb(243, 169, 19) ;
     position: relative;
     padding-top: 5px;
+
 }
 
 #aboutme>h2 {
@@ -216,6 +233,7 @@ h1,h2 {
     text-align: center;
     font-weight: bolder;
     margin-bottom: -5px;
+
 }
 
 #aboutme>div {
@@ -227,6 +245,7 @@ h1,h2 {
     align-items: center;
     justify-content: center;
 
+
 }
 
 #aboutme>div>p {
@@ -237,13 +256,16 @@ h1,h2 {
     font-size: 20px;
     width:70%;
 
+
 }
 
 #skills {
-    height: 600px;
+    height: auto;
     width: 100%;
     position: relative;
     padding-left: 15px;
+    padding-bottom: 20px;
+
 }
 
 #skills>h2 {
@@ -254,6 +276,7 @@ h1,h2 {
     text-align: center;
     font-weight: bolder;
     margin-bottom: 70px;
+
 }
 
 #row1{
@@ -262,29 +285,170 @@ h1,h2 {
     margin-top: 50px;
     display:grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 230px;
+    grid-template-rows: repeat(2, 230px);
     gap:25px;
+
     
 }
 
 #row2 {
     width:76%;
-    margin: auto;
-    margin-top: 15px;
+    margin-left: 70px;
+    margin-top: 50px;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 230px;
     gap:25px;
+
 }
 
+#row1 > div:hover {
+    margin: 4px;
+}
+
+ #row2 > div:hover {
+    margin: 4px;
+}
 #skills img {
     width:72%;
     height:72%;
     border-radius: 20px;
     border:4px solid #2626fb;
     padding: 1.5px;
+
+}
+
+.tech {
+    color:black;
+    background-color: rgb(243, 169, 19);
+    width: fit-content;
+    padding: 6px 16px;
+    margin-left: 70px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+#proj {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin: auto;
+    position: relative;
+
+}
+
+#proj>h2{
+    color:white;
+    text-decoration: underline;
+    position: realtive;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+
+#proj>div {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 520px;
+    gap:100px;
+}
+
+#proj>div>div {
+    background-color: black;
+    opacity: 1;
+    border-radius: 9px;
 }
 
 
+
+
+.proimg {
+    width:92%;
+    height:40%;
+    margin-left:15px;
+    margin-top:15px;
+    margin-right: 15px;
+    margin:15px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.protitle {
+    color:rgb(243, 169, 19);
+    text-align: center;
+    margin-top: 0px;
+    background-color: black;
+}
+.prodescri {
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    width:90%;
+    margin: auto;
+}
+
+.prodescri>p {
+    background-color: black;
+    font-size: 16px;
+    text-align: left;
+}
+
+.view {
+    height:70px;
+    width: 70%;
+    margin: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 70px;
+
+}
+
+.view > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.view img {
+    width:40px;
+    height:38px;
+}
+
+img {
+    cursor: pointer;
+}
+
+#cal {
+    width:85%;
+    height: 300px;
+    margin: auto;
+}
+
+#cal>div {
+    color: white;
+}
+
+#cal h1 {
+    color:white;
+}
+
+#gitcont {
+    color:white;
+    text-decoration: underline;
+    position: realtive;
+    padding-top: 35px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 70px;
+
+}
 
 

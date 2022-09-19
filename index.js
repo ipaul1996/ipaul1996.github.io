@@ -1,22 +1,4 @@
-// var icon = document.getElementById("icon");
 
-// icon.onclick = function() {
-
-//     document.body.classList.toggle("dark-theme");
-
-//     if(document.body.classList.contains("dark-theme")) {
-
-//         icon.src = "./sun.png";
-//         document.getElementById('title').style.color = "rgb(243, 169, 19)";
-
-//     } else {
-
-//         icon.src = "./moon.png";
-//         document.getElementById('title').style.color = "#0c0ce2";
-
-//     }
-
-// }
 
 
 document.getElementById('icon2').addEventListener("click",()=> {
@@ -35,21 +17,50 @@ document.getElementById('icon3').addEventListener("click",()=> {
 
 
 document.getElementById('ab').addEventListener("click",()=> {
-    window.scrollTo(0,400);
-    document.getElementById('home').style.textDecoration="none";
-    document.getElementById('ab').style.textDecoration="underline";
-    document.getElementById('sk').style.textDecoration="none";
-    document.getElementById('pr').style.textDecoration="none";
-    document.getElementById('con').style.textDecoration="none";
+    window.scrollTo(0,450);
 
 });
 
 document.getElementById('home').addEventListener("click",()=> {
     window.scrollTo(0,0);
-    document.getElementById('home').style.textDecoration="underline";
-    document.getElementById('ab').style.textDecoration="none";
-    document.getElementById('sk').style.textDecoration="none";
-    document.getElementById('pr').style.textDecoration="none";
-    document.getElementById('con').style.textDecoration="none";
 
 });
+
+document.getElementById('sk').addEventListener("click",()=> {
+    window.scrollTo(0,880);
+
+});
+
+document.getElementById('pr').addEventListener("click",()=> {
+    window.scrollTo(0,1950);
+
+});
+
+document.getElementById('con').addEventListener("click",()=> {
+    window.scrollTo(0,2850);
+
+});
+
+
+
+
+document.getElementById('e1').addEventListener("click", ()=> {
+    window.location.href = "https://cricbuzz-masai.netlify.app/";
+})
+
+document.getElementById('e2').addEventListener("click", ()=> {
+    window.location.href = "https://stirring-lollipop-9b03d4.netlify.app/";
+});
+
+
+document.getElementById('g1').addEventListener("click", ()=> {
+    window.location.href = "https://github.com/ipaul1996/polite-mice-5556";
+})
+
+document.getElementById('g2').addEventListener("click", ()=> {
+    window.location.href = "https://github.com/ipaul1996/WEB-19_Team_Dominator";
+});
+
+
+
+
