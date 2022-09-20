@@ -112,7 +112,7 @@
                     delightfully safe, surprisingly gentle, and
                     unquestionably effective skincare products that are
                     free from nasty chemicals.</p>
-                <p>A collaborative project accomplished with team of 5
+                <p>A collaborative project accomplished with a team of 5
                         members in 5 days</p>
                 <p style="display: inline; color:rgb(243, 169, 19); margin-left: -100px;">Tech Stack:</p>
                 <p style="display: inline">HTML | CSS | JavaScript</p>
@@ -137,6 +137,34 @@
         </div>
     </div>
 
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <div>
+            <div>
+                <img src="./Images/contact.png" alt="">
+            </div>
+            <div>
+                 <form action="" name="google-sheet">
+                    <input type="text" id="myname" name="name" placeholder="Name">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="text" id="message" name="message" placeholder="Message">
+                    <input type="submit" value="SEND" id="submit">
+                  </form>
+                  <div id="emph">
+                    <div>
+                        <img src="./Images/email.png" alt="">
+                        <p> indraindrani1999@gmail.com </p>
+                    </div>
+                    <div>
+                        <img src="./Images/phone.png" alt="">
+                        <p> +918240213989 </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <p> Designed and built by Indrajit Paul, 2022 all rights reserved. </p>
+    </div>
+
     <script
             src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
@@ -154,6 +182,23 @@
            }
         }).then(r => r.text())
     </script>
-</body>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx1R3yDyB71klxHdyonJtIEJvRGXDQWiOHVNh9Q95e8Tir2xcAwCYIexUy5t-UuLIw5/exec'
+        const form = document.forms['google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {alert("Thanks for Contacting me..! I Will Contact You Soon...")
+                                window.location.reload();})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   </body>
 </html>
 <script src="index.js"></script>

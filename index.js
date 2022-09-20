@@ -9,10 +9,6 @@ document.getElementById('icon3').addEventListener("click",()=> {
     window.location.href = "https://www.linkedin.com/in/indrajitpaul1996/";
 });
 
-// document.getElementById('icon4').addEventListener("click",()=> {
-//     window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=email@indraindrani1999@gmail.com";
-// });
-
 
 
 
@@ -37,7 +33,7 @@ document.getElementById('pr').addEventListener("click",()=> {
 });
 
 document.getElementById('con').addEventListener("click",()=> {
-    window.scrollTo(0,2850);
+    window.scrollTo(0,3060);
 
 });
 
@@ -60,6 +56,8 @@ document.getElementById('g1').addEventListener("click", ()=> {
 document.getElementById('g2').addEventListener("click", ()=> {
     window.location.href = "https://github.com/ipaul1996/WEB-19_Team_Dominator";
 });
+
+
 
 
 
