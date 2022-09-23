@@ -1,3 +1,7 @@
+import Skills from "./Components/Skills.js";
+
+
+document.getElementById('myskills').innerHTML = Skills();
 
 
 
