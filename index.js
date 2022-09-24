@@ -1,9 +1,3 @@
-import Skills from "./Components/Skills.js";
-
-
-document.getElementById('myskills').innerHTML = Skills();
-
-
 
 document.getElementById('icon2').addEventListener("click",()=> {
     window.location.href = "https://github.com/ipaul1996";
@@ -32,12 +26,12 @@ document.getElementById('sk').addEventListener("click",()=> {
 });
 
 document.getElementById('pr').addEventListener("click",()=> {
-    window.scrollTo(0,1950);
+    window.scrollTo(0,2270);
 
 });
 
 document.getElementById('con').addEventListener("click",()=> {
-    window.scrollTo(0,3060);
+    window.scrollTo(0,3520);
 
 });
 

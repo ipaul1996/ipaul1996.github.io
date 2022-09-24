@@ -154,7 +154,7 @@
                 <img src="./Images/contact.png" alt="">
             </div>
             <div>
-                 <form action="" name="google-sheet">
+                 <form action="" name="google-sheet" id="form">
                     <input type="text" id="myname" name="name" placeholder="Name">
                     <input type="text" id="email" name="email" placeholder="Email">
                     <input type="text" id="message" name="message" placeholder="Message">
@@ -198,12 +198,20 @@
         const form = document.forms['google-sheet']
     
         form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {alert("Thanks for Contacting me..! I Will Contact You Soon...")
-                                window.location.reload();})
-            .catch(error => console.error('Error!', error.message))
-        })
+            e.preventDefault();
+            if(document.getElementById('myname').value === "" || document.getElementById('email').value === "" || document.getElementById('message').value === null) {
+                alert("Please fill all the details...");
+                    document.getElementById('form').reset();
+
+            } else {                       
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        alert("Thanks for Contacting me..! I Will Contact You Soon...")
+                        document.getElementById('form').reset();
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            }});
+
     </script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -211,4 +219,4 @@
 
    </body>
 </html>
-<!-- <script src="index.js"></script> -->
+<script src="index.js"></script>
