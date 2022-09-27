@@ -10,7 +10,7 @@ html {
 }
 
 #navbar {
-    height: 80px;
+    height: 82px;
     width: 100%;
     padding: 0px 45px;
     display: flex;
@@ -92,13 +92,14 @@ html {
 
 #about {
     height: 500px;
-    width: auto;
+    width: 85%;
     border: 1px;
-    margin-top: 85px;
+    margin:auto;
+    margin-top: 115px;
+    margin-bottom: 70px;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    padding: 30px;
-
+    grid-template-columns: 1fr 1fr;
+    gap:8%;
     position: relative;
 
 }
@@ -110,7 +111,8 @@ html {
 
 #about>div:first-child {
     padding-left: 26%;
-    padding-top: 11%;
+    padding-top: 18%;
+    /* border:1px solid white; */
 }
 
 #about>div:first-child>button {
@@ -148,6 +150,7 @@ html {
     width: 90%;
     background-color: #464bee;
     border-radius: 50%;
+    margin: auto;
     
    
 }
@@ -163,21 +166,20 @@ html {
 #about>div:nth-child(2) {
     display: flex;
     align-items: center;
-    margin-left: 65px;
-    padding-top: 36px;
+    /* border:1px solid white; */
+    justify-content: center;
 }
 
 
 #picborder {
-
     height:310px;
     width: 310px;
     background-color: black;
     border-radius: 50%;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 20px;
     border:8px solid white;
-    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -268,6 +270,7 @@ h1,h2 {
     padding-left: 0px;
     padding-bottom: 20px;
     margin: auto;
+    /* border:1px solid greenyellow; */
 
 }
 
@@ -358,6 +361,7 @@ h1,h2 {
     position: relative;
     border-top: 2px solid rgb(97, 94, 94);
     padding-bottom: 20px;
+    /* border: 1px solid white; */
 
 }
 
@@ -374,19 +378,23 @@ h1,h2 {
 
 #proj>div {
     width: 65%;
-    height: auto;
+    height: fit-content;
     margin: auto;
     margin-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 520px;
     gap:100px;
+    /* border:1px solid yellow; */
 }
 
 #proj>div>div {
     background-color: black;
     opacity: 1;
-    border-radius: 9px;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    height: fit-content;
+    padding-bottom: 15px;
 }
 
 
@@ -397,10 +405,7 @@ h1,h2 {
 .proimg {
     width:92%;
     height:40%;
-    margin-left:15px;
-    margin-top:15px;
-    margin-right: 15px;
-    margin:15px;
+    margin: 4%;
     border-radius: 10px;
     cursor: default;
 }
@@ -501,18 +506,15 @@ img {
 
 #contact>div {
     width: 80%;
-    height: 550px;
-    /* border: 1px solid red; */
+    height: 500px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:5%;
-    height:500px;
     background-color: black;
 }
 
 #contact>div>div {
-    /* border: 1px solid white; */
     background-color: black;
 }
 
@@ -537,7 +539,7 @@ form {
     padding-bottom: 0px;
     background-color: black;
     color:white;
-    /* border: 1px solid white; */
+    
 }
 
 input {
@@ -573,12 +575,11 @@ input {
   }
 
   #emph {
-    width: 75%;
+    width: 70%;
+    margin: auto;
     height:auto;
     background-color: black;
-    /* border: 1px solid red; */
-    padding: 2px;
-    margin-left: 38px;
+    padding:2px 35px ;
     margin-top: -25px;
   }
 
@@ -586,11 +587,9 @@ input {
     width:100%;
     height:40px;
     background-color: black;
-    /* border:1px solid white; */
     display:flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 35px;
   }
 
   #emph>div>img {
@@ -636,11 +635,13 @@ input {
     #about>div:first-child {
         padding-left: 10%;
         padding-top: 0;
-        padding-bottom: 50px;
+        padding-bottom: 15px;
+        margin-bottom: -25px;
+        /* border:1px solid white; */
     }
 
     #about>div:nth-child(2) {
-        padding-bottom: 15px;
+        padding-bottom: 95px;
         display:flex;
         justify-content: center;
     }
@@ -670,6 +671,7 @@ input {
         grid-template-rows: repeat(2, 180px);
         flex-wrap: wrap;
         gap:10%;
+       
     }
 
     
@@ -695,9 +697,119 @@ input {
         font-size: x-large;
     }
 
+    #proj {
+        height:fit-content;
+        padding-bottom: 180px;
+    }
+
     #proj>div {
         width: 65%;
-        height: auto;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 520px;
+        gap:15%;
+    }
+
+   
+}
+
+@media screen and (min-width: 320px) and (max-width:650px) {
+    
+    #navbar {
+        display:none;
+        padding: 0px;
+    }
+
+    #about {
+        height:auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        align-items: center;
+        padding: 30px;
+        padding-left: 0px;
+        /* margin:auto; */
+        margin-left: 35px;
+    
+    }
+
+    #about>div:first-child {
+        padding-left: 10%;
+        padding-top: 0;
+        padding-bottom: 15px;
+        margin-bottom: -25px;
+        /* border:1px solid white; */
+    }
+
+    #about>div:nth-child(2) {
+        padding-bottom: 95px;
+        display:flex;
+        justify-content: center;
+    }
+
+    #about>div:first-child>div {
+        margin-left: -3px;
+    }
+
+    #aboutme {
+        height:auto;
+        margin: auto;
+    }
+
+    #aboutme>div {
+        height:auto;
+        padding-bottom: 60px;
+        position:relative;
+        width:95%;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    #row1{
+        width:80%;
+        height:550px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        display:grid;
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(3, 135px);
+        flex-wrap: wrap;
+        gap:25%;
+        justify-content: center;
+    }
+
+    
+    #row2 {
+        width:80%;
+        height:450px;
+        margin: auto;
+        margin-top: 50px;
+        display:grid;
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(2, 135px);
+        flex-wrap: wrap;
+        gap:12%;
+        gap:25%;
+        justify-content: center;
+    
+    }
+    
+    .tech {
+        margin:auto;
+        margin-bottom: 70px;
+    }
+    #proj {
+        padding-bottom: 27px;
+    }
+
+    #proj>div {
+        width: 65%;
+        height: fit-content;
         margin: auto;
         margin-bottom: 60px;
         display: grid;
@@ -706,12 +818,32 @@ input {
         gap:100px;
     }
 
-    #emph {       
-        margin-left: 23px;      
+    #proj>div>div {
+        height:fit-content
     }
 
-    #emph>div {
-       
-        padding-left:21px;
-      }
+    
+    
+
+
+    #gitcont, #cal {
+        display: none;
+    }
+
+    #dummy {
+        display:none;
+    }
+
+    #contact>div {
+        width: 80%;
+        height: 550px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:5%;
+        height:500px;
+        background-color: black;
+    }
+
+    
 }

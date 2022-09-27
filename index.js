@@ -11,7 +11,7 @@ document.getElementById('icon3').addEventListener("click",()=> {
 
 
 document.getElementById('ab').addEventListener("click",()=> {
-    window.scrollTo(0,450);
+    window.scrollTo(0,475);
 
 });
 
@@ -21,17 +21,17 @@ document.getElementById('home').addEventListener("click",()=> {
 });
 
 document.getElementById('sk').addEventListener("click",()=> {
-    window.scrollTo(0,880);
+    window.scrollTo(0,890);
 
 });
 
 document.getElementById('pr').addEventListener("click",()=> {
-    window.scrollTo(0,2270);
+    window.scrollTo(0,2320);
 
 });
 
 document.getElementById('con').addEventListener("click",()=> {
-    window.scrollTo(0,3520);
+    window.scrollTo(0,3560);
 
 });
 
