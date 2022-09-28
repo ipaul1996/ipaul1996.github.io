@@ -778,6 +778,14 @@ input {
         border-radius: 8%; 
       }
 
+      /* #gitcont, #cal {
+        display: none;
+    } */
+
+    /* #calnder {
+        width:fit-content
+    } */
+
    
 }
 
