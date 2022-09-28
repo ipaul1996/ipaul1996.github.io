@@ -778,9 +778,9 @@ input {
         border-radius: 8%; 
       }
 
-      #gitcont, #cal {
+      #gitcont, #cal, #calender {
         display: none;
-    }
+      }
 
     
 }
