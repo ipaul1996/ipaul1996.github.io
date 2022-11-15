@@ -35,6 +35,11 @@ document.getElementById('con').addEventListener("click",()=> {
 
 });
 
+document.getElementById('re').addEventListener("click",()=> {
+    window.location.href = "./Indrajit_Paul_Resume.pdf";
+
+});
+
 
 
 
@@ -56,7 +61,45 @@ document.getElementById('g2').addEventListener("click", ()=> {
 });
 
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu= document.querySelector('.nav-menu');
 
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+
+document.getElementById('h').addEventListener("click",()=> {
+    window.scrollTo(0,0);
+
+})
+
+document.getElementById('a').addEventListener("click",()=> {
+    window.scrollTo(0,800);
+
+})
+
+document.getElementById('s').addEventListener("click",()=> {
+    window.scrollTo(0,1400);
+
+})
+
+document.getElementById('p').addEventListener("click",()=> {
+    window.scrollTo(0,2900);
+
+})
+
+
+document.getElementById('c').addEventListener("click",()=> {
+    window.scrollTo(0,5000);
+
+})
 
 
 
