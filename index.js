@@ -11,7 +11,7 @@ document.getElementById('icon3').addEventListener("click",()=> {
 
 
 document.getElementById('ab').addEventListener("click",()=> {
-    window.scrollTo(0,475);
+    window.scrollTo(0,575);
 
 });
 
@@ -21,17 +21,17 @@ document.getElementById('home').addEventListener("click",()=> {
 });
 
 document.getElementById('sk').addEventListener("click",()=> {
-    window.scrollTo(0,890);
+    window.scrollTo(0,950);
 
 });
 
 document.getElementById('pr').addEventListener("click",()=> {
-    window.scrollTo(0,2320);
+    window.scrollTo(0,2340);
 
 });
 
 document.getElementById('con').addEventListener("click",()=> {
-    window.scrollTo(0,3990);
+    window.scrollTo(0,4620);
 
 });
 
@@ -96,7 +96,7 @@ document.getElementById('h').addEventListener("click",()=> {
 })
 
 document.getElementById('a').addEventListener("click",()=> {
-    window.scrollTo(0,100);
+    window.scrollTo(0,800);
 
 })
 
@@ -112,7 +112,7 @@ document.getElementById('p').addEventListener("click",()=> {
 
 
 document.getElementById('c').addEventListener("click",()=> {
-    window.scrollTo(0,7000);
+    window.scrollTo(0,5000);
 
 })
 
