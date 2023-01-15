@@ -36,7 +36,7 @@ document.getElementById('con').addEventListener("click",()=> {
 });
 
 document.getElementById('re').addEventListener("click",()=> {
-    window.location.href = "./Indrajit_Paul_Resume.pdf";
+    window.open("./Indrajit_Paul_Resume.pdf", '_blank');
 
 });
 
@@ -51,6 +51,14 @@ document.getElementById('e2').addEventListener("click", ()=> {
     window.location.href = "https://stirring-lollipop-9b03d4.netlify.app/";
 });
 
+document.getElementById('e3').addEventListener("click", ()=> {
+    window.location.href = "";
+});
+
+document.getElementById('e4').addEventListener("click", ()=> {
+    window.location.href = "";
+});
+
 
 document.getElementById('g1').addEventListener("click", ()=> {
     window.location.href = "https://github.com/ipaul1996/polite-mice-5556";
@@ -60,6 +68,13 @@ document.getElementById('g2').addEventListener("click", ()=> {
     window.location.href = "https://github.com/ipaul1996/WEB-19_Team_Dominator";
 });
 
+document.getElementById('g3').addEventListener("click", ()=> {
+    window.location.href = "https://github.com/ipaul1996/Artic-Tern-Trip-Management-RESTful-API";
+});
+
+document.getElementById('g4').addEventListener("click", ()=> {
+    window.location.href = "https://github.com/ipaul1996/DigishopeX";
+});
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu= document.querySelector('.nav-menu');
@@ -81,7 +96,7 @@ document.getElementById('h').addEventListener("click",()=> {
 })
 
 document.getElementById('a').addEventListener("click",()=> {
-    window.scrollTo(0,800);
+    window.scrollTo(0,100);
 
 })
 
@@ -97,7 +112,7 @@ document.getElementById('p').addEventListener("click",()=> {
 
 
 document.getElementById('c').addEventListener("click",()=> {
-    window.scrollTo(0,5000);
+    window.scrollTo(0,7000);
 
 })
 

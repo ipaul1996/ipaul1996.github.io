@@ -101,6 +101,7 @@ html {
 
 header {
     background-color: black;
+   
     
 }
 
@@ -119,6 +120,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding:0 24px;
+    
 }
 
 .nav-menu {
@@ -226,8 +228,12 @@ a {
 
 #about>div:first-child {
     padding-left: 26%;
-    padding-top: 18%;
+    padding-top: 112px;
+    padding-bottom: 85px;
     /* border:1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
 }
 
 #about>div:first-child>button {
@@ -308,29 +314,31 @@ h1,h2 {
 }
 
 #icon2 {
-    width:48px;
-    height:48px;
+    width:45px;
+    height:45px;
 }
 
 #icon3 {
-    width:42px;
-    height:43px;
+    width:40px;
+    height:41px;
 }
 
 #icon4 {
     margin-top: 6px;
-    width:43px;
-    height:48px;
+    width:42px;
+    height:49px;
 }
 #icon2:hover , #icon3:hover, #icon4:hover{
     opacity: 0.5;
 }
 #about>div:first-child>div {
     display: flex;
-    width:30%;
-    margin-top: 20px;
-    justify-content: space-between;
+    width:35%;
+    margin-top: 0px;
+    justify-content: space-evenly;
     align-items: center;
+    /* border:1px solid white; */
+    margin-left: -8px;
 
 }
 
@@ -529,6 +537,7 @@ h1,h2 {
     color:rgb(243, 169, 19);
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 8px;
     background-color: black;
 }
 .prodescri {
@@ -743,7 +752,7 @@ input {
   #statbox {
     width: 95%;
     margin:auto;
-    height:205px;
+    height:215px;
     /* border: 1px solid yellow; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -769,7 +778,7 @@ input {
   }
   
   #statbox>div>h1 {
-    margin-bottom: -8px;
+    margin-bottom: 0px;
     
   }
   
