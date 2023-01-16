@@ -790,7 +790,7 @@ input {
 
     #about {
         height:auto;
-        display: flex;;
+        display: flex;
         flex-direction: column-reverse;
         justify-content: left;
         align-items: center;
@@ -802,9 +802,15 @@ input {
     #about>div:first-child {
         padding-left: 10%;
         padding-top: 0;
-        padding-bottom: 15px;
-        margin-bottom: -25px;
-        /* border:1px solid white; */
+        padding-bottom: 0px;
+        height: 280px;
+        width: 400px
+    }
+
+    #about>div:first-child>div {
+        width:36%;
+        padding-left: -15px;
+        margin-left: -95px;
     }
 
     #about>div:nth-child(2) {
@@ -873,11 +879,14 @@ input {
         width: 65%;
         height: fit-content;
         margin: auto;
-        margin-bottom: 60px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 520px;
-        gap:15%;
+        gap:100px;
+    }
+
+    #proj>div>div {
+        height:470px;
     }
 
     #statbox {
@@ -941,6 +950,7 @@ input {
         padding-bottom: 15px;
         margin-bottom: -25px;
         /* border:1px solid white; */
+        height: 270px;
     }
 
     #about>div:nth-child(2) {
@@ -950,7 +960,7 @@ input {
     }
 
     #about>div:first-child>div {
-        margin-left: -3px;
+        margin-left: 4px;
     }
 
     #aboutme {

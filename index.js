@@ -96,12 +96,12 @@ document.getElementById('h').addEventListener("click",()=> {
 })
 
 document.getElementById('a').addEventListener("click",()=> {
-    window.scrollTo(0,800);
+    window.scrollTo(0,1000);
 
 })
 
 document.getElementById('s').addEventListener("click",()=> {
-    window.scrollTo(0,1400);
+    window.scrollTo(0,1390);
 
 })
 
@@ -112,7 +112,7 @@ document.getElementById('p').addEventListener("click",()=> {
 
 
 document.getElementById('c').addEventListener("click",()=> {
-    window.scrollTo(0,5000);
+    window.scrollTo(0,5600);
 
 })
 
