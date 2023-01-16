@@ -1,10 +1,10 @@
 
 document.getElementById('icon2').addEventListener("click",()=> {
-    window.location.href = "https://github.com/ipaul1996";
+    window.open("https://github.com/ipaul1996", '_blank');
 });
 
 document.getElementById('icon3').addEventListener("click",()=> {
-    window.location.href = "https://www.linkedin.com/in/indrajitpaul1996/";
+    window.open("https://www.linkedin.com/in/indrajitpaul1996/", '_blank');
 });
 
 
@@ -44,36 +44,36 @@ document.getElementById('re').addEventListener("click",()=> {
 
 
 document.getElementById('e1').addEventListener("click", ()=> {
-    window.location.href = "https://cricbuzz-masai.netlify.app/";
+    window.open("https://cricbuzz-masai.netlify.app/", '_blank');
 })
 
 document.getElementById('e2').addEventListener("click", ()=> {
-    window.location.href = "https://stirring-lollipop-9b03d4.netlify.app/";
+    window.open("https://stirring-lollipop-9b03d4.netlify.app/", '_blank');
 });
 
 document.getElementById('e3').addEventListener("click", ()=> {
-    window.location.href = "";
+    window.open("", '_blank');
 });
 
 document.getElementById('e4').addEventListener("click", ()=> {
-    window.location.href = "";
+    window.open("", '_blank');
 });
 
 
 document.getElementById('g1').addEventListener("click", ()=> {
-    window.location.href = "https://github.com/ipaul1996/polite-mice-5556";
+    window.open("https://github.com/ipaul1996/polite-mice-5556", '_blank');
 })
 
 document.getElementById('g2').addEventListener("click", ()=> {
-    window.location.href = "https://github.com/ipaul1996/WEB-19_Team_Dominator";
+    window.open("https://github.com/ipaul1996/WEB-19_Team_Dominator", '_blank');
 });
 
 document.getElementById('g3').addEventListener("click", ()=> {
-    window.location.href = "https://github.com/ipaul1996/Artic-Tern-Trip-Management-RESTful-API";
+    window.open("https://github.com/ipaul1996/Artic-Tern-Trip-Management-RESTful-API", '_blank');
 });
 
 document.getElementById('g4').addEventListener("click", ()=> {
-    window.location.href = "https://github.com/ipaul1996/DigishopeX";
+    window.open("https://github.com/ipaul1996/DigishopeX", '_blank');
 });
 
 const hamburger = document.querySelector(".hamburger");
