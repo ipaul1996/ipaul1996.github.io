@@ -345,18 +345,21 @@ h1,h2 {
 #aboutme {
     height: 270px;
     width: 100%;
-    background-color:rgb(243, 169, 19) ;
+    /* background-color:rgb(243, 169, 19) ; */
+    background-color: #464bee;
     position: relative;
     padding-top: 5px;
 
 }
 
 #aboutme>h2 {
-    color:black;
+    /* color:black; */
+    color:white;
     text-decoration: underline;
     position: realtive;
-    background-color: rgb(243, 169, 19);
-    padding-top: 35px;
+    /* background-color: rgb(243, 169, 19); */
+    background-color: #464bee;
+    padding-top: 55px;
     text-align: center;
     font-weight: bolder;
     margin-bottom: -5px;
@@ -364,7 +367,8 @@ h1,h2 {
 }
 
 #aboutme>div {
-    background-color: rgb(243, 169, 19);
+    /* background-color: rgb(243, 169, 19); */
+    background-color: #464bee;
     padding-top: -30px;
     width:80%;
     margin: auto;
@@ -376,8 +380,10 @@ h1,h2 {
 }
 
 #aboutme>div>p {
-    background-color: rgb(243, 169, 19);
-    padding-top: 10px;
+    color: rgb(251, 187, 10);
+    /* background-color: rgb(243, 169, 19); */
+    background-color: #464bee;
+    padding-top: 20px;
     text-align: center;
     font-weight: bolder;
     font-size: 20px;

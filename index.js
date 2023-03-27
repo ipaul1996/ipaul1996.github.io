@@ -52,20 +52,20 @@ document.getElementById('e2').addEventListener("click", ()=> {
 });
 
 document.getElementById('e3').addEventListener("click", ()=> {
-    window.open("", '_blank');
+    window.open("https://drive.google.com/drive/u/1/folders/1gw6dpaKmgrfAGEc_WKRjYC1P5wsKBeS8", '_blank');
 });
 
 document.getElementById('e4').addEventListener("click", ()=> {
-    window.open("", '_blank');
+    window.open("https://drive.google.com/drive/u/1/folders/1QqR1rD6cPO4HfrsfLiCDfRKnurkuqYFN", '_blank');
 });
 
 
 document.getElementById('g1').addEventListener("click", ()=> {
-    window.open("https://github.com/ipaul1996/polite-mice-5556", '_blank');
+    window.open("https://github.com/ipaul1996/Cricbuzz_Clone", '_blank');
 })
 
 document.getElementById('g2').addEventListener("click", ()=> {
-    window.open("https://github.com/ipaul1996/WEB-19_Team_Dominator", '_blank');
+    window.open("https://github.com/ipaul1996/dotandkey-Clone", '_blank');
 });
 
 document.getElementById('g3').addEventListener("click", ()=> {
