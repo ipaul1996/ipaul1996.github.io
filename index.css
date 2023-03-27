@@ -287,7 +287,6 @@ a {
 #about>div:nth-child(2) {
     display: flex;
     align-items: center;
-    /* border:1px solid white; */
     justify-content: center;
 }
 
@@ -345,7 +344,6 @@ h1,h2 {
 #aboutme {
     height: 270px;
     width: 100%;
-    /* background-color:rgb(243, 169, 19) ; */
     background-color: #464bee;
     position: relative;
     padding-top: 5px;
@@ -353,11 +351,9 @@ h1,h2 {
 }
 
 #aboutme>h2 {
-    /* color:black; */
     color:white;
     text-decoration: underline;
     position: realtive;
-    /* background-color: rgb(243, 169, 19); */
     background-color: #464bee;
     padding-top: 55px;
     text-align: center;
@@ -367,7 +363,6 @@ h1,h2 {
 }
 
 #aboutme>div {
-    /* background-color: rgb(243, 169, 19); */
     background-color: #464bee;
     padding-top: -30px;
     width:80%;
@@ -381,7 +376,6 @@ h1,h2 {
 
 #aboutme>div>p {
     color: rgb(249, 184, 6);
-    /* background-color: rgb(243, 169, 19); */
     background-color: #464bee;
     padding-top: 20px;
     text-align: center;
